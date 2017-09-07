@@ -1,0 +1,335 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul{list-style: none;}
+a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+h1:after{
+    content: " ";
+    display: block;
+    width: 50px;
+    height: 20px;
+    color: #07cbc9;
+    border-bottom: 3px solid #07cbc9;
+    margin: auto;
+}
+h1 +p{
+    margin: 0px auto;
+    width: 580px;
+    color: #999;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h2{font-size: 35px;}
+h3{font-size: 30px;}
+h4{
+    font-size: 23px;
+    color: #fff;
+}
+.explore{
+    width: 108px;
+    height: 40px;
+    border: 1px solid black;
+    line-height: 40px;
+    text-align: center;
+}
+.explore a{
+    display: block;
+    background-color: black;
+}
+.explore a:hover{
+    background-color: rgba(0,0, 0, 0);
+}
+body{
+    font-family: "Microsoft YaHei UI";
+	font-size: 16px;
+}
+.header .top{
+    width: 100%;
+    min-width: 1000px;
+    height: 75px;
+    background-color: #07cbc9;
+    position: fixed;
+    z-index: 1000;
+}
+.header .top .logo{
+    float:left;
+    height: 75px;
+    line-height: 75px;
+}
+.header .top .logo img{height: 75px;}
+.header .top .nav{
+    font-size: 18px;
+	height: 75px;
+	float: left;
+	text-align: center;
+	line-height: 75px;
+	padding-left: 75px;
+}
+.header .top .nav ul li{
+    float: left;
+    width: 100px;
+    margin-right: 10px;
+}
+.header .top .nav ul li a{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.header .top .user_info {
+	height: 75px;
+	width: 200px;
+	float: right;
+	text-align: center;
+	line-height: 75px;
+	padding-right: 30px;
+	font-size: 18px;
+}
+
+.user_info a.user_head {
+	float: left;
+	dispay: block;
+	width: 75px;
+	height: 75px;
+}
+
+.user_info a:hover {
+	background-color: #00b3ba;
+}
+
+.user_info img {
+	height: 75px;
+}
+
+.user_info p {
+	float: right;
+	display: inline-block;
+}
+
+.user_info .line {
+	margin: 0px 7px;
+}
+
+a:hover{
+    background-color: black;
+}
+.header .banner{
+    font-size:0px;
+    width: 100%;
+    padding-top: 75px;
+    position: relative;
+}
+.header .banner img{height: 800px;width: 100%;}
+.header .banner .cover{
+    background-color: #000;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+/* .header .banner form{
+    font-family: "Microsoft YaHei UI";
+	font-size: 16px;
+    width: 600px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -175px;
+    margin-left: -300px;
+    z-index: 2;
+}
+.header .banner form input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: rgba(255,255, 255, 0);
+    border: 1px solid #fff;
+    color: #fff;
+    padding-left: 10px;
+}
+.header .banner form input:hover{border-color: #07cbc9}
+.header .banner form textarea{
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255,255, 255, 0);
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 0px 10px 10px;
+    margin-bottom: 20px;
+}
+.header .banner form textarea:hover{border-color: #07cbc9}
+
+.header .banner form input::-webkit-input-placeholder,
+.header .banner form  textarea::-webkit-input-placeholder { /* Chrome */
+  /* color: #ccc;
+} */
+.header .banner form t:-ms-input-placeholder,
+.header .banner form  textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #ccc;
+}
+.header .banner form  input::-moz-placeholder,
+.header .banner form  textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #ccc;
+  opacity: 1;
+}
+.header .banner form  input:-moz-placeholder,
+.header .banner form  textarea:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #ccc;
+  opacity: 1;
+}
+.header .banner form input:nth-last-of-type(1){
+    margin: 0px auto;
+    border: 1px solid  #07cbc9;
+    width: 150px;
+    padding: 0px;
+}
+.header .banner form input:nth-last-of-type(1):hover{background-color: #07cbc9} 
+#main .about .content{
+    width: 80%;
+    min-width: 1080px;
+    margin: 50px auto 100px;
+}
+#main .about .content .summary{
+    position: relative;
+    width: 100%;
+    min-width:800px; 
+}
+#main .about .content .summary .left{
+    position: absolute;
+    top: 14px;
+    left: 2%;
+    width:369px;
+}
+#main .about .content .summary .left h2{
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#main .about .content .summary .left .des{
+    width: 327px;
+    height: 180px;
+    border: 1px solid #ccc;
+    background-color: rgba(255,255,255,0.4);
+    padding: 20px;
+}
+#main .about .content .summary .left .des .explore a:hover{
+    background-color: rgba(0,0, 0, 0);
+    color: black;
+}
+#main .about .content .summary .left .des .explore{
+    margin-top: 17px;
+} 
+#main .about .content .summary .middle{
+    margin: 0 auto;
+    width: 610px;
+}
+#main .about .content .summary .middle img{
+    width: 100%;
+}
+#main .about .content .summary .right{
+            position: absolute;
+            top: 0;
+            left:80%;
+}
+#main .about .content .summary .right div{
+    width: 202px;
+    height: 122px;
+    border: 1px solid #07cbc9;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+#main .about .content .summary .right div h3{margin: 10px 0px 20px;}
+#main .about .content .summary .right div h3::after{
+    display: block;
+    content: "";
+    width: 50px;
+    height: 20px;
+    color: #07cbc9;
+    border-bottom: 3px solid #07cbc9;
+    margin: auto;
+}
+ #main .about .description{
+     height: 682px;
+     width: 100%;
+     min-width: 900px;
+    } 
+#main .about .description dl{
+    float: left;
+    overflow: hidden;
+    width: 50%;
+} 
+#main .about .description dl dt,dd{
+    float: left;
+    width: 50%;
+    height: 337.25px;
+}
+#main .about .description dl dd{
+    box-sizing: border-box;
+    background-color: #07cbc9;
+    color: #fff;
+    padding: 34px;
+}
+#main .about .description dl dd h4{
+    margin-bottom: 20px;
+}
+#main .about .description dl dd p:nth-of-type(2){
+    font-size: 14px;
+    margin: 30px auto 20px;
+}
+#main .about .description dl dd .explore{margin: 0 auto;}
+#main .gallery{
+    padding-top: 50px;
+    margin: 0 auto;
+}
+#main .gallery .content{
+    width: 990px;
+    margin: 0px auto;
+    padding-top: 20px;
+    overflow: hidden;
+}
+#main .gallery .content dl{
+    float: left;
+    margin: 0px 10px 10px 0px;;
+    height: 277px;
+}
+#main .gallery img{
+    width: 320px;
+    height: 217px;
+}
+#main .gallery .content dl dt{height: 217px;}
+#main .gallery .content dl dd{
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    padding-left: 30px;
+    color: #fff;
+    line-height: 60px;
+}
+.footer{
+    width: 100%;
+    min-width: 500px;
+    height: 60px;
+    background-color: #07cbc9;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 40px;
+}
